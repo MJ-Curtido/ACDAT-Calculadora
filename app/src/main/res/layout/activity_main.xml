@@ -7,10 +7,11 @@
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/bloqueBotones"
         android:layout_width="366dp"
         android:layout_height="460dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="410dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -280,4 +281,24 @@
             app:layout_column="2"
             app:layout_row="5" />
     </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/txtCalculadora"
+        android:layout_width="363dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="93dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="362dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
 </androidx.constraintlayout.widget.ConstraintLayout>
