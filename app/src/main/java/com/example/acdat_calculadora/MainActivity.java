@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         this.memoria = 0.0;
         this.ultimoNum = "";
 
+        binding.btnIgual.setEnabled(false);
         binding.btnMasMenos.setEnabled(false);
         binding.btnMR.setEnabled(false);
         alternarSimbolos(false);
