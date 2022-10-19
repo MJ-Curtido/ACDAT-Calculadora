@@ -49,16 +49,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void anyadirNum(String num) {
-        binding.txtResultado.setText("");
-
         binding.btnMmenos.setEnabled(true);
         binding.btnMmas.setEnabled(true);
         binding.btnIgual.setEnabled(true);
         binding.btnMR.setEnabled(true);
         alternarSimbolos(true);
 
-        this.ultimoNum += num;
-        binding.txtCalculadora.append(num);
+        if (binding.txtResultado.getText().toString() != "") {
+            binding.txtCalculadora.setText(num);
+            this.ultimoNum = num;
+        }
+        else {
+            this.ultimoNum += num;
+            binding.txtCalculadora.append(num);
+        }
+
+        binding.txtResultado.setText("");
     }
 
     public void anyadirSimbolo(String simbolo) {
