@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnMR.setEnabled(true);
         alternarSimbolos(true);
 
-        if (binding.txtResultado.getText().toString() != "") {
+        if (!binding.txtResultado.getText().toString().equals("")) {
             binding.txtCalculadora.setText(num);
             this.ultimoNum = num;
         }
@@ -109,15 +109,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void calcularRespuesta() {
         binding.txtResultado.setText(eval(binding.txtCalculadora.getText().toString()) + "");
+
+        if (binding.txtResultado.getText().toString().contains("Infinity")) {
+            alternarSimbolos(false);
+        }
     }
 
     public void cambioSigno() {
-        char signo = binding.txtCalculadora.getText().toString().charAt((binding.txtCalculadora.getText().toString().length() - ultimoNum.length() + 1));
+        char signo = binding.txtCalculadora.getText().toString().charAt((binding.txtCalculadora.getText().toString().length() - ultimoNum.length() - 1));
+
         if (signo == '+') {
-            binding.txtCalculadora.setText(binding.txtCalculadora.getText().toString().substring(0, binding.txtCalculadora.getText().toString().length() - ultimoNum.length() + 1) + "-" + ultimoNum);
+            binding.txtCalculadora.setText(binding.txtCalculadora.getText().toString().substring(0, binding.txtCalculadora.getText().toString().length() - ultimoNum.length() - 1) + "-" + ultimoNum);
         }
         else {
-            binding.txtCalculadora.setText(binding.txtCalculadora.getText().toString().substring(0, binding.txtCalculadora.getText().toString().length() - ultimoNum.length() + 1) + "+" + ultimoNum);
+            binding.txtCalculadora.setText(binding.txtCalculadora.getText().toString().substring(0, binding.txtCalculadora.getText().toString().length() - ultimoNum.length() - 1) + "+" + ultimoNum);
         }
     }
 
