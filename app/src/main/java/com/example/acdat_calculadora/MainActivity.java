@@ -97,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
     public void borrarPantalla() {
         binding.txtCalculadora.setText("");
         binding.txtResultado.setText("");
+
+        binding.btnMR.setEnabled(false);
+
+        alternarSimbolos(false);
     }
 
     public void anyadirComa() {
