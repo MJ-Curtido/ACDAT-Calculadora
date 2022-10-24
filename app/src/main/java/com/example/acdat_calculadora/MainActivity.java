@@ -116,7 +116,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (binding.txtResultado.getText().toString().contains("Infinity")) {
             alternarSimbolos(false);
+
         }
+        binding.btnMR.setEnabled(false);
+        binding.btnMmas.setEnabled(false);
+        binding.btnMmenos.setEnabled(false);
+        binding.btnComa.setEnabled(false);
+        binding.btnMasMenos.setEnabled(false);
     }
 
     public void cambioSigno() {

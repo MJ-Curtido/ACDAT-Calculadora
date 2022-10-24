@@ -24,6 +24,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMC"
+            android:textSize="20sp"
             app:layout_column="0"
             app:layout_row="0" />
 
@@ -36,6 +37,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMmas"
+            android:textSize="20sp"
             app:layout_column="1"
             app:layout_row="0" />
 
@@ -48,6 +50,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMmenos"
+            android:textSize="20sp"
             app:layout_column="2"
             app:layout_row="0" />
 
@@ -60,6 +63,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMR"
+            android:textSize="20sp"
             app:layout_column="3"
             app:layout_row="0" />
 
@@ -72,6 +76,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnC"
+            android:textSize="20sp"
             app:layout_column="0"
             app:layout_row="1" />
 
@@ -84,6 +89,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMasMenos"
+            android:textSize="20sp"
             app:layout_column="1"
             app:layout_row="1" />
 
@@ -96,6 +102,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnDiv"
+            android:textSize="20sp"
             app:layout_column="2"
             app:layout_row="1" />
 
@@ -108,6 +115,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMult"
+            android:textSize="20sp"
             app:layout_column="3"
             app:layout_row="1" />
 
@@ -120,6 +128,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn7"
+            android:textSize="20sp"
             app:layout_column="0"
             app:layout_row="2" />
 
@@ -132,6 +141,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn8"
+            android:textSize="20sp"
             app:layout_column="1"
             app:layout_row="2" />
 
@@ -144,6 +154,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn9"
+            android:textSize="20sp"
             app:layout_column="2"
             app:layout_row="2" />
 
@@ -156,6 +167,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMas"
+            android:textSize="20sp"
             app:layout_column="3"
             app:layout_row="2" />
 
@@ -168,6 +180,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn4"
+            android:textSize="20sp"
             app:layout_column="0"
             app:layout_row="3" />
 
@@ -180,6 +193,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn5"
+            android:textSize="20sp"
             app:layout_column="1"
             app:layout_row="3" />
 
@@ -192,6 +206,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn6"
+            android:textSize="20sp"
             app:layout_column="2"
             app:layout_row="3" />
 
@@ -204,6 +219,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnMenos"
+            android:textSize="20sp"
             app:layout_column="3"
             app:layout_row="3" />
 
@@ -216,6 +232,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn1"
+            android:textSize="20sp"
             app:layout_column="0"
             app:layout_row="4" />
 
@@ -228,6 +245,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn2"
+            android:textSize="20sp"
             app:layout_column="1"
             app:layout_row="4" />
 
@@ -240,6 +258,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn3"
+            android:textSize="20sp"
             app:layout_column="2"
             app:layout_row="4" />
 
@@ -252,6 +271,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnIgual"
+            android:textSize="20sp"
             app:layout_column="3"
             app:layout_row="4"
             app:layout_rowSpan="2" />
@@ -265,6 +285,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btn0"
+            android:textSize="20sp"
             app:layout_column="0"
             app:layout_columnSpan="2"
             app:layout_row="5" />
@@ -278,6 +299,7 @@
             android:width="50dp"
             android:height="77dp"
             android:text="@string/btnComa"
+            android:textSize="20sp"
             app:layout_column="2"
             app:layout_row="5" />
     </androidx.gridlayout.widget.GridLayout>
@@ -289,6 +311,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="93dp"
         android:textAlignment="textEnd"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -299,6 +322,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:textAlignment="textEnd"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
 </androidx.constraintlayout.widget.ConstraintLayout>
